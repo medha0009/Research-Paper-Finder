@@ -1,0 +1,2 @@
+@echo off
+poetry publish -r test-pypi --username __token__ --password "pypi-AgENdGVzdC5weXBpLm9yZwIkYzFjNTkzY2EtOGY1ZS00ZmY0LWFkYzgtMGViODViNzYwMDk4AAIqWzMsIjU2MGNkODBiLWRlMjQtNGZmYy05YjczLWIxZTlkNWVhNWJjZiJdAAAGINt5NTYFy947zy7-fBQykNPH-8K8tWqC4EUWiiH2wYsG" 
