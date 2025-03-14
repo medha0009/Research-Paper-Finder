@@ -115,8 +115,10 @@ papers = finder.run(
 ### Development Assistance
 
 This project was developed with the assistance of:
-- [Claude](https://www.anthropic.com/claude) - AI language model for code review and documentation
-- [Cursor](https://cursor.sh/) - AI-powered IDE
+- [Claude](https://www.anthropic.com/claude) - AI language model for code review and documentation - LLM
+- [Cursor](https://cursor.sh/) - AI-powered IDE - LLM
+- [YouTube](https://www.youtube.com/)
+- [ChatGPT](https://chatgpt.com/) - LLM
 
 ## Features
 
@@ -142,6 +144,3 @@ This project was developed with the assistance of:
    ```
 5. Submit a pull request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
