@@ -83,10 +83,10 @@ class ResearchPaperFinder:
     
     def __init__(self, api_key: Optional[str] = None, debug: bool = False) -> None:
         """
-        Initialize the ResearchPaperFinder with API key and debug mode.
+        Initialize the ResearchPaperFinder.
         
         Args:
-            api_key: NCBI API key
+            api_key: NCBI API key. If not provided, will look for NCBI_API_KEY environment variable.
             debug: Whether to print debug information
             
         Raises:
@@ -95,8 +95,10 @@ class ResearchPaperFinder:
         self.api_key: Optional[str] = api_key or os.getenv('NCBI_API_KEY')
         self.debug: bool = debug
         
+        # Make API key optional
         if not self.api_key:
-            raise ValidationError("API key is required. Provide it as an argument or set NCBI_API_KEY environment variable.")
+            if self.debug:
+                print("Warning: No API key provided. Requests will be rate-limited.")
         
         if self.debug:
             print(f"Debug mode: ON")
